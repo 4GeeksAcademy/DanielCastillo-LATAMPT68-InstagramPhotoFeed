@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/fdf596022e.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand"><i class="fa-brands fa-instagram"></i> Instagram</a>
+    <form class="d-flex" role="search">
+        <!-- Button trigger modal -->
+      <button type="button" class="btn btn-success me-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Create a new post
+      </button>
+
+<!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+           <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Caption:
+            <textarea></textarea>
+          </div>
+          <div class="mb-3 d-flex d gap-2">
+            <button type="button" class="btn btn-outline-dark ms-3"><i class="fa-solid fa-camera"></i></button>
+            <button type="button" class="btn btn-outline-dark"><i class="fa-solid fa-location-dot"></i></i></button>
+
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success">Publicar</button>
+           </div>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button type="button" class="btn btn-secondary dropdown-toggle" id="settingsDropdown" data-bs-toggle="dropdown">
+          <i class="fa-solid fa-gear"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li><a class="dropdown-item" href="#">Accesibility</a></li>
+          <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+          <li><a class="dropdown-item text-danger" href="#">logout</a></li>
+        </ul>
+      </div>
+    </form>
+  </div>
+</nav>
+<!--Navbar grid/timeline-->
+<ul class="nav nav-tabs d-flex justify-content-center mt-2" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+<div class="container text-center">
+  <!--1-->
+  <div class="row pt-4">
+    <div class="col">
+      <div class="col">
+      <img class="h-100 w-100" src="https://ferrari-cdn.thron.com/delivery/public/thumbnail/ferrari/5ff9382c-2c1f-47d4-a5c4-e2c5944489fa/bocxuw/std/488x325/5ff9382c-2c1f-47d4-a5c4-e2c5944489fa?scalemode=auto">
+    </div>
+    </div>
+    <div class="col">
+      <div class="col">
+      <img class="h-100 w-100" src="https://cdn-1.motorsport.com/images/amp/68VWjv92/s1200/sergio-perez-cadillac.webp">
+    </div>
+    </div>
+    <div class="col">
+      <div class="col">
+      <img class="h-100 w-100" src="https://images.squarespace-cdn.com/content/v1/612f4f7e00611a662fb50b92/e7aa7ae4-0155-4a06-ba0e-ae02a155f610/SI202601160163.jpg">
+    </div>
+    </div>
+  </div>
+  <!--2-->
+    <div class="row pt-4">
+    <div class="col">
+      <div class="col">
+      <img class="h-100 w-100" src="https://media.formula1.com/image/upload/t_16by9Centre/c_lfill,w_3392/q_auto/v1740000000/fom-website/2025/Audi/Concept%20Launch/A251783_large.webp">
+    </div>
+    </div>
+    <div class="col">
+      <div class="col">
+      <img class="h-100 w-100" src="https://www.williamsf1.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ffnx611yr%2Fproductionv2%2Fbde29333e20400cfbc3c6157481409c0273cf1b1-5120x2880.jpg%3Fw%3D1920%26h%3D1080%26auto%3Dformat&w=3840&q=75&dpl=dpl_dzd6sboKnJfEUgx6y2GgkNsbsZxM">
+    </div>
+    </div>
+    <div class="col">
+      <div class="col">
+      <img class="h-100 w-100" src="https://images.ctfassets.net/1fvlg6xqnm65/5mPoJIJroXGsBxhRL0tYrQ/5bcb87e98a87414fe2fc900bc68382ba/Mercedes-AMG_F1_W17_E_PERFORMANCE_-_GR_6.jpg?w=1273&q=75&fm=webp">
+    </div>
+    </div>
+  </div>
+  <!--3-->
+    <div class="row pt-4">
+    <div class="col">
+      <div class="col">
+      <img class="h-100 w-100" src="https://www.infobae.com/resizer/v2/EQV5QHKX6JDN3M6FC7X6JWWHSA.jpg?auth=14a40b077469074b10a96b77f81c2b5552bcce74da1811998ac54264efc037eb&smart=true&width=992&height=558&quality=85">
+    </div>
+    </div>
+    <div class="col">
+      <div class="col">
+      <img class="h-100 w-100" src="https://ichef.bbci.co.uk/ace/standard/2560/cpsprodpb/55a7/live/61640140-fd45-11f0-a370-0dec4ea0b2da.jpg">
+    </div>
+    </div>
+    <div class="col">
+      <div class="col">
+      <img class="h-100 w-100" src="https://media.formula1.com/image/upload/c_lfill,w_2048/q_auto/v1740000000/fom-website/2026/Miscellaneous/AOC-132-1.webp">
+    </div>
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+      <!--<div class="card">-->
+  <div class="row justify-content-center p-4">
+    <div class="col-12 col-md-7 col-lg-6">
+
+      <!-- Post 1 -->
+      <div class="d-flex card mb-4 shadow-sm">
+        <div class="p-3 d-flex justify-content-between"><strong>scuderiaferrari</strong><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                 <img class="w-300 h-300 object-fit-cover" src="https://ferrari-cdn.thron.com/delivery/public/thumbnail/ferrari/5ff9382c-2c1f-47d4-a5c4-e2c5944489fa/bocxuw/std/488x325/5ff9382c-2c1f-47d4-a5c4-e2c5944489fa?scalemode=auto" alt="scuderia ferrari">
+                <div class="card-body">
+                  <p class="card-text"><strong>lewishamilton, </strong><span>and</span> <strong>346,342 Liked this post.</strong><br>The new SF-26 is ON FIRE! </p>
+                </div>
+              </div>
+      <!-- Post 2 -->
+      <div class="d-flex card mb-4 shadow-sm ">
+        <div class="p-3 d-flex justify-content-between"><strong>cadillacf1team</strong><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                 <img class="w-300 h-300 object-fit-cover" src="https://cdn-1.motorsport.com/images/amp/68VWjv92/s1200/sergio-perez-cadillac.webp" alt="cadillac">
+                <div class="card-body">
+                  <p class="card-text"><strong>schecoperez, </strong><span>and</span> <strong>352,234 Liked this post.</strong><br>We hit our first lap at Barcelona! </p>
+                </div>
+      </div>
+      <!-- Post 3 -->
+            <div class="card mb-4 shadow-sm ">
+       <div class="p-3 d-flex justify-content-between"><strong>redbullracing</strong><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                 <img class="w-300 h-300 object-fit-cover" src="https://images.squarespace-cdn.com/content/v1/612f4f7e00611a662fb50b92/e7aa7ae4-0155-4a06-ba0e-ae02a155f610/SI202601160163.jpg" alt="mclaren">
+                <div class="card-body">
+                  <p class="card-text"><strong>723,585 Likes</strong><br>The new Red Bull is finally Royal blue!</p>
+                </div>
+      </div>
+      <!-- Post 4 -->
+            <div class="card mb-4 shadow-sm ">
+       <div class="p-3 d-flex justify-content-between"><strong>audif1</strong><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                 <img class="w-300 h-300 object-fit-cover" src="https://media.formula1.com/image/upload/t_16by9Centre/c_lfill,w_3392/q_auto/v1740000000/fom-website/2025/Audi/Concept%20Launch/A251783_large.webp" alt="audi">
+                <div class="card-body">
+                  <p class="card-text"><strong>586,633 Likes</strong><br>New team for the grid</p>
+                </div>
+      </div>
+      <!-- Post 5 -->
+            <div class="card mb-4 shadow-sm ">
+       <div class="p-3 d-flex justify-content-between"><strong>williamsf1official</strong><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                 <img class="w-300 h-300 object-fit-cover" src="https://www.williamsf1.com/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Ffnx611yr%2Fproductionv2%2Fbde29333e20400cfbc3c6157481409c0273cf1b1-5120x2880.jpg%3Fw%3D1920%26h%3D1080%26auto%3Dformat&w=3840&q=75&dpl=dpl_dzd6sboKnJfEUgx6y2GgkNsbsZxM" alt="williams">
+                <div class="card-body">
+                  <p class="card-text"><strong>235,875 Likes</strong><br>Having some problems with the new car! But design is READY!</p>
+                </div>
+      </div>
+      <!-- Post 5 -->
+
+            <div class="card mb-4 shadow-sm ">
+       <div class="p-3 d-flex justify-content-between"><strong>georgerussell63</strong><i class="fa-solid fa-ellipsis-vertical"></i></div>
+
+                 <img class="w-300 h-300 object-fit-cover" src="https://images.ctfassets.net/1fvlg6xqnm65/5mPoJIJroXGsBxhRL0tYrQ/5bcb87e98a87414fe2fc900bc68382ba/Mercedes-AMG_F1_W17_E_PERFORMANCE_-_GR_6.jpg?w=1273&q=75&fm=webp" alt="Mercedes">
+                <div class="card-body">
+                  <p class="card-text"><strong>1,235,231 Likes</strong><br>This will be my 2026 car!</p>
+                </div>
+      </div>
+            <div class="card mb-4 shadow-sm ">
+       <div class="p-3 d-flex justify-content-between"><strong>f1</strong><i class="fa-solid fa-ellipsis-vertical"></i></div>
+
+                 <img class="w-300 h-300 object-fit-cover" src="https://www.infobae.com/resizer/v2/EQV5QHKX6JDN3M6FC7X6JWWHSA.jpg?auth=14a40b077469074b10a96b77f81c2b5552bcce74da1811998ac54264efc037eb&smart=true&width=992&height=558&quality=85" alt="driver line-up">
+                <div class="card-body">
+                  <p class="card-text"><strong>567,453 Likes</strong><br>DRIVER LINE-UP FOR 2026 SEASON</p>
+                </div>
+      </div>
+            <div class="card mb-4 shadow-sm ">
+       <div class="p-3 d-flex justify-content-between"><strong>Espndeportes</strong><i class="fa-solid fa-ellipsis-vertical"></i></div>
+
+                 <img class="w-300 h-300 object-fit-cover" src="https://ichef.bbci.co.uk/ace/standard/2560/cpsprodpb/55a7/live/61640140-fd45-11f0-a370-0dec4ea0b2da.jpg" alt="mclaren">
+                <div class="card-body">
+                  <p class="card-text"><strong>2,568,564 Likes</strong><br>Aston Martin showed us a diferent set-up for his car! That was amazing!</p>
+                </div>
+      </div>
+            <div class="card mb-4 shadow-sm ">
+       <div class="p-3 d-flex justify-content-between"><strong>mclaren</strong><i class="fa-solid fa-ellipsis-vertical"></i></div>
+
+                 <img class="w-300 h-300 object-fit-cover" src="https://media.formula1.com/image/upload/c_lfill,w_2048/q_auto/v1740000000/fom-website/2026/Miscellaneous/AOC-132-1.webp" alt="mclaren">
+                <div class="card-body">
+                  <p class="card-text"><strong>4,180,786 Likes</strong><br>How looks the mclaren in black, but, did you see the number 1?</p>
+                </div>
+      </div>
+  </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
